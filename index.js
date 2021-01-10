@@ -29,11 +29,11 @@ async function getLeague() {
     let template1 = `
     <tr class="manele2 blue darken-2">
       <td class="valoare">${position}  </td>
-      <td><img src="${imgurl}" height="20px" width="20px"> ${name} </td>
-      <td>${playedGames} </td>
-      <td>${goalFor}:${goalAgainst} </td>
+      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+      <td>${playedGames}</td>
+      <td>${goalFor}:${goalAgainst}</td>
       
-      <td>${points}  </td>
+      <td>${points}</td>
     </tr>
     
     `;
