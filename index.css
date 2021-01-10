@@ -1,3 +1,12 @@
+body,
+head {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 .team {
   background-color: blue !important;
 }
@@ -20,19 +29,5 @@ footer {
   main,
   footer {
     padding-left: 0;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .banana {
-    padding-right: 420px;
-  }
-
-  .poicatul {
-    padding-right: 3700px;
-  }
-
-  .portocala {
-    padding-right: 1000px;
   }
 }
