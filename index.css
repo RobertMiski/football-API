@@ -22,6 +22,10 @@ table {
   margin-top: 1.5rem;
 }
 
+img {
+  border-radius: 15rem;
+}
+
 @media only screen and (max-width: 600px) {
   table {
     font-size: 0.9rem;
