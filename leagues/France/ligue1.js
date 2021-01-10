@@ -1,10 +1,8 @@
-
-
 let manele = document.querySelector('.manelepara');
 let buton = document.querySelector('.btn-large');
 let standings = document.querySelector('.standings');
 async function getLeague() {
-  const res = await  fetch("http://api.football-data.org/v2/competitions/BL1/standings", {
+  const res = await  fetch("http://api.football-data.org/v2/competitions/FL1/standings", {
     "method": "GET",
     "headers": {
       'X-Auth-Token': 'ef619df9f0034252b58c4ee99e8443c3',
@@ -96,3 +94,4 @@ async function getLeague() {
 }
 
 window.addEventListener('load',getLeague);
+
