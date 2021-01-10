@@ -8,5 +8,23 @@ body {
 
 tr,
 td {
-  border-radius:0px;
+  border-radius: 0px;
+  font-weight: 600;
+}
+
+thead {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  border-radius: 0px !important;
+  font-weight: bolder !important;
+}
+table {
+  border: solid 3px rgb(211, 211, 211) !important;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 0.9rem;
+  }
 }
