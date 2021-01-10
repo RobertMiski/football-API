@@ -1,3 +1,3 @@
-# football-API
+# Football-API-League-Standings
 
 Show league standings by using the Football API 
