@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems,instances);
+});
 let manele = document.querySelector('.manelepara');
 let buton = document.querySelector('.btn-large');
 let standings = document.querySelector('.standings');
