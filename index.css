@@ -8,3 +8,31 @@
 .container {
   margin-top: -1rem !important;
 }
+
+header,
+main,
+footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banana {
+    padding-right: 500px;
+  }
+
+  .poicatul {
+    padding-right: 3700px;
+  }
+
+  .portocala {
+    padding-right: 1000px;
+  }
+}
