@@ -7,7 +7,7 @@ async function getLeague() {
   const res = await  fetch("http://api.football-data.org/v2/competitions/BL1/standings", {
     "method": "GET",
     "headers": {
-      'X-Auth-Token': 'ef619df9f0034252b58c4ee99e8443c3',
+      'X-Auth-Token': 'dc01dc8f375e4a5ba858036423e2b193',
       
     }
   });
