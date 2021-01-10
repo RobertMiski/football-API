@@ -31,7 +31,6 @@ async function getLeague() {
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
-      
       <td>${points}</td>
     </tr>
     `;
@@ -52,7 +51,6 @@ async function getLeague() {
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
-      
       <td>${points}</td>
     </tr>
     
@@ -63,7 +61,6 @@ async function getLeague() {
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
-      
       <td>${points}</td>
     </tr>
     
