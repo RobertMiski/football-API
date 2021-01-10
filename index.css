@@ -26,3 +26,7 @@ table {
     font-size: 0.5rem !important;
   }
 }
+
+img {
+  border-radius: 5rem !important;
+}
