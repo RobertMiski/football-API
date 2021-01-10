@@ -27,46 +27,46 @@ async function getLeague() {
     
     let template1 = `
     <tr class="manele2 blue darken-2">
-      <td class="valoare">${position}  </td>
-      <td><img src="${imgurl}" height="20px" width="20px"> ${name} </td>
-      <td>${playedGames} </td>
-      <td>${goalFor}:${goalAgainst} </td>
+      <td class="valoare">${position}</td>
+      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+      <td>${playedGames}</td>
+      <td>${goalFor}:${goalAgainst}</td>
       
-      <td>${points}  </td>
+      <td>${points}</td>
     </tr>
     
     `;
     let template2 = `
     <tr class="manele3 red lighten-3">
-      <td class="valoare">${position}  </td>
-      <td><img src="${imgurl}" height="20px" width="20px"> ${name} </td>
-      <td>${playedGames} </td>
-      <td>${goalFor}:${goalAgainst} </td>
+      <td class="valoare">${position}</td>
+      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+      <td>${playedGames}</td>
+      <td>${goalFor}:${goalAgainst}</td>
       
-      <td>${points}  </td>
+      <td>${points}</td>
     </tr>
     
     `;
 
     let template3= `
     <tr class="manele3 orange lighten-2">
-      <td class="valoare">${position}  </td>
-      <td><img src="${imgurl}" height="20px" width="20px"> ${name} </td>
-      <td>${playedGames} </td>
-      <td>${goalFor}:${goalAgainst} </td>
+      <td class="valoare">${position}</td>
+      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+      <td>${playedGames}</td>
+      <td>${goalFor}:${goalAgainst}</td>
       
-      <td>${points}  </td>
+      <td>${points}</td>
     </tr>
     
     `;
     let template4= `
     <tr class="manele3">
-      <td class="valoare">${position}  </td>
-      <td><img src="${imgurl}" height="20px" width="20px"> ${name} </td>
-      <td>${playedGames} </td>
-      <td>${goalFor}:${goalAgainst} </td>
+      <td class="valoare">${position}</td>
+      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+      <td>${playedGames}</td>
+      <td>${goalFor}:${goalAgainst}</td>
       
-      <td>${points}  </td>
+      <td>${points}</td>
     </tr>
     
     `;
