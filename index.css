@@ -5,3 +5,8 @@ body {
 body {
   position: relative;
 }
+
+tr,
+td {
+  border-radius:0px;
+}
