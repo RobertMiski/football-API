@@ -37,7 +37,7 @@ async function getLeague() {
     `;
     let template2 = `
     <tr class="manele3 red lighten-3">
-      <td class="valoare">${position} <button class="btn-floating btn-small"><i class="material-icons red">arrow_downward</i></button></td>
+      <td class="valoare">${position}</td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames} </td>
       <td>${goalFor}:${goalAgainst} </td>
@@ -68,35 +68,20 @@ async function getLeague() {
       <td>${points}</td>
     </tr>
     `;
-
-    let template5= `
-    <tr class="manele3 brown">
-      <td class="valoare">${position}</td>
-      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td>${playedGames} </td>
-      <td>${goalFor}:${goalAgainst} </td>
-      
-      <td>${points}</td>
-    </tr>
-    
-    `;
     
     
     if(position<5) {
       standings.innerHTML+=template1;
     }
 
-    if(position===5){
-      standings.innerHTML+=template5;
-    }
-    if (position >5 && position <7) {
+    if (position >4 && position <7) {
       standings.innerHTML+=template3;
     }
-    if(position >17) {
+    if(position >15) {
       standings.innerHTML+=template2;
     }
     
-    if(position>6 && position <18) {
+    if(position>6 && position <16) {
       standings.innerHTML+=template4;
     }
     
@@ -112,3 +97,4 @@ async function getLeague() {
 }
 
 window.addEventListener('load',getLeague);
+
