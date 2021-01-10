@@ -2,4 +2,4 @@
 
 Show league standings by using the Football API
 
-Hello world! !!
+5 leagues for now: Bundesliga, Premier League, Ligue 1, Serie A and La Liga!
