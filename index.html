@@ -8,38 +8,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
   <title>League Standings</title>
 </head>
 <body>
-  
- 
-
   <nav>
-    <div class="nav-wrapper black sharpen-2 banana">
-      <a href="#" class="brand-logo truncate banana"><i class="material-icons">public</i>Leagues Standings</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="../leagues/England/PremierLeague.html">Premier League</a></li>
-        <li><a href="../leagues/Italia/italia.html">Serie A</a></li>
-        <li><a href="../leagues/France/ligue1.html">Ligue 1</a></li>
-      </ul>
-      <ul id="isDragged" class="sidenav sidenav-fixed hide-on-med-and-up">
-        <li><a href="../leagues/England/PremierLeague.html">Premier League</a></li>
-        <li><a href="../leagues/Italia/italia.html">Serie A</a></li>
-        <li><a href="../leagues/France/ligue1.html">Ligue 1</a></li>
-      </ul>
-      <a href="#" data-target="isDragged" class="sidenav-trigger hide-on-med-and-up" draggable="true" edge="left"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  
- 
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo truncate banana"><i class="material-icons">public</i>Leagues Standings</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="./leagues/England/PremierLeague.html">Premier League</a></li>
+          <li><a href="./leagues/France/ligue1.html">Ligue 1</a></li>
+          <li><a href="./leagues/Italia/italia.html">Serie A</a></li>
+          <li><a href="./leagues/Spain/laliga.html">La Liga</a></li>
+        </ul>
+      </div>
+    </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="./leagues/England/PremierLeague.html">Premier League</a></li>
+    <li><a href="./leagues/France/ligue1.html">Ligue 1</a></li>
+    <li><a href="./leagues/Italia/italia.html">Serie A</a></li>
+    <li><a href="./leagues/Spain/laliga.html">La Liga</a></li>
+</ul>
 
   
-        
-  
-  <div class="container" >
+  <div class="container center" >
     <div class="manele center">
-      <table class="table tabel">
+      <table class="table center">
         <thead>
           <tr>
             <th>Position</th>
@@ -56,16 +50,6 @@
     
     </div>
   </div>
-
-
-
-
-  
-
-
-
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="index.js"></script>

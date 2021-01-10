@@ -8,32 +8,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
   
   <title>League Standings</title>
 </head>
 <body>
   
- 
+
 
   <nav>
-    <div class="nav-wrapper black sharpen-2">
-      <a href="#" class="brand-logo truncate pocaitul"><i class="material-icons">public</i>Leagues Standings</a>
+    <div class="nav-wrapper black manelar">
+      <a href="#" class="brand-logo truncate"><i class="material-icons">public</i>Leagues Standings</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="../../index.html">Bundesliga</a></li>
         <li><a href="../Italia/italia.html">Serie A</a></li>
         <li><a href="../France/ligue1.html">Ligue 1</a></li>
+        <li><a href="../Spain/laliga.html">La Liga</a></li>
       </ul>
-      <ul id="isDragged" class="sidenav sidenav-fixed hide-on-med-and-up">
-        <li><a href="../../index.html">Bundesliga</a></li>
-        <li><a href="../Italia/italia.html">Serie A</a></li>
-        <li><a href="../France/ligue1.html">Ligue 1</a></li>
-      </ul>
-      <a href="#" data-target="isDragged" class="sidenav-trigger hide-on-med-and-up" draggable="true" edge="left"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="../../index.html">Bundesliga</a></li>
+        <li><a href="../Italia/italia.html">Serie A</a></li>
+        <li><a href="../France/ligue1.html">Ligue 1</a></li>
+        <li><a href="../Spain/laliga.html">La Liga</a></li>
+</ul>
         
   
   <div class="container" >
