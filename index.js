@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let url = object.url;
     template1 = `
   
-    <div class= "row" style="display: inline-block">
-    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
-  </iframe> </div>
+    
+    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="320px" style="border:1px solid black;">
+  </iframe> 
     </div>
-    </div>
+    
     `;
   
     seriea.innerHTML += template1;}
@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
       let url = object.url;
     template2 = `
   
-    <div class= "row" style="display: inline-block">
-    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
-  </iframe> </div>
+    
+    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="320px" style="border:1px solid black;">
+  </iframe> 
     </div>
-    </div>
+    
     `;
   
     laliga.innerHTML += template2;}
@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
       let url = object.url;
     template9 = `
   
-    <div class= "row" style="display: inline-block">
-    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
-  </iframe> </div>
+    
+    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="330px" style="border:1px solid black;">
+  </iframe> 
     </div>
-    </div>
+    
     `;
   
     bundes.innerHTML += template9;}
@@ -104,11 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
       let url = object.url;
     template5 = `
   
-    <div class= "row" style="display: inline-block">
-    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
-  </iframe> </div>
+    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="330px" style="border:1px solid black;">
+  </iframe> 
     </div>
-    </div>
+    
     `;
   
     ligue1.innerHTML += template5;}
@@ -118,11 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
       let url = object.url;
     template6 = `
   
-    <div class= "row" style="display: inline-block">
-    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
-  </iframe> </div>
+    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="330px" style="border:1px solid black;">
+  </iframe>
     </div>
-    </div>
+    
     `;
   
     premierleague.innerHTML += template6;}
@@ -132,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
       let url = object.url;
     template7 = `
   
-    <div class= "row" style="display: inline-block">
-    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
-  </iframe> </div>
+    
+    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="330px" style="border:1px solid black;">
+  </iframe> 
     </div>
-    </div>
+    
     `;
   
     liga1.innerHTML += template7;}
