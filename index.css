@@ -61,18 +61,18 @@ img {
 }
 
 .groparu {
-  background-image: url("download.png") !important;
+  background-image: url("../resources/download.png") !important;
   background-size: cover;
 }
 
 .europa {
-  background-image: url("europa\ league.png") !important;
+  background-image: url("../resources/europa\ league.png") !important;
   background-size: cover;
   background-position: center;
 }
 
 .playoff {
-  background-image: url("playoff.png") !important;
+  background-image: url("../resources/playoff.png") !important;
   background-size: cover !important;
   background-position: center;
 }
