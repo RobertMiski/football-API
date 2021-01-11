@@ -29,11 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
       let playedGames = team1.playedGames;
       let goalFor = team1.goalsFor;
       let goalAgainst= team1.goalsAgainst;
-      
+      let form = team1.form;
+
       let template1 = `
       <tr class="manele2 blue darken-2">
         <td class="valoare">${position} <button class="btn-floating btn-small"><i class="material-icons blue">arrow_upward</i></button></td>
         <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+        <td class = "center-align hide-on-med-and-down">${form};</td>
         <td class="center-align">${playedGames}</td>
         <td class="center-align">${goalFor}:${goalAgainst}</td>
         
@@ -45,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <tr class="manele3 red lighten-3">
         <td class="valoare">${position} <button class="btn-floating btn-small"><i class="material-icons red">arrow_downward</i></button></td>
         <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+        <td class = "center-align hide-on-med-and-down">${form};</td>
         <td class="center-align">${playedGames}</td>
         <td class="center-align">${goalFor}:${goalAgainst}</td>
         
@@ -57,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <tr class="manele3 brown lighten-2">
         <td class="valoare">${position} <button class="btn-floating btn-small playoff"></button></td>
         <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+        <td class = "center-align hide-on-med-and-down">${form};</td>
         <td class="center-align">${playedGames}</td>
         <td class="center-align">${goalFor}:${goalAgainst}</td>
         
@@ -68,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <tr class="manele3">
         <td class="valoare">${position}</td>
         <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
+        <td class = "center-align hide-on-med-and-down">${form};</td>
         <td class="center-align">${playedGames}</td>
         <td class="center-align">${goalFor}:${goalAgainst}</td>
         

@@ -4,116 +4,145 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.dropdown-trigger');
-  var instances = M.Dropdown.init(elems, instances);
-});
-let manele = document.querySelector('.manelepara');
-let buton = document.querySelector('.btn-large');
-let standings = document.querySelector('.standings');
-async function getLeague() {
-  const res = await  fetch("https://api.football-data.org/v2/competitions/BL1/standings", {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, instances);
+  });
+
+  async function getValue(){
+    const response = await fetch("https://free-football-soccer-videos.p.rapidapi.com/", {
     "method": "GET",
     "headers": {
-      'X-Auth-Token': 'ef619df9f0034252b58c4ee99e8443c3',
-      
+      "x-rapidapi-key": "37c9a986c7mshd594a88ef67488dp19fef4jsnf21c7f920328",
+      "x-rapidapi-host": "free-football-soccer-videos.p.rapidapi.com",
     }
+    
+  
+  })
+  let idSerie= 0;
+  let idBundes = 0;
+  let idPremier= 0;
+  let idLaliga = 0;
+  let idLigue= 0;
+  let id = 0;
+  let seriea = document.querySelector('.seriea');
+  let laliga = document.querySelector('.laliga');
+  let bundes = document.querySelector('.bundes');
+  let premierleague = document.querySelector('.premierleague');
+  let ligue1 = document.querySelector('.ligue1');
+  let liga1 = document.querySelector('.liga1');
+
+  const data = await response.json();
+  console.log(data);
+  data.forEach(object => {
+    if(object.competition.name==="ITALY: Serie A") {
+      idSerie++;
+    }
+    if(object.competition.name==="SPAIN: La Liga") {
+      idLaliga++;
+    }
+    if(object.competition.name==="GERMANY: Bundesliga") {
+      idBundes++;
+    }
+    if(object.competition.name==="ENGLAND: Premier League") {
+      idPremier++;
+    }
+    if(object.competition.name==="FRANCE: Ligue 1") {
+      idLigue++;
+    }
+    // appearences
+    id++;
+    
+    
+    // make 3 appearences
+    if(object.competition.name==='ITALY: Serie A' && idSerie < 4) 
+    {
+    let url = object.url;
+    template1 = `
+  
+    <div class= "row" style="display: inline-block">
+    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
+  </iframe> </div>
+    </div>
+    </div>
+    `;
+  
+    seriea.innerHTML += template1;}
+
+    
+    else if(object.competition.name==="SPAIN: La Liga" && idLaliga < 4) 
+    {
+      let url = object.url;
+    template2 = `
+  
+    <div class= "row" style="display: inline-block">
+    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
+  </iframe> </div>
+    </div>
+    </div>
+    `;
+  
+    laliga.innerHTML += template2;}
+
+
+    else if(object.competition.name==="GERMANY: Bundesliga" && idBundes< 4) 
+    {
+      let url = object.url;
+    template9 = `
+  
+    <div class= "row" style="display: inline-block">
+    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
+  </iframe> </div>
+    </div>
+    </div>
+    `;
+  
+    bundes.innerHTML += template9;}
+
+
+    else if(object.competition.name==="FRANCE: Ligue 1" && idLigue < 4) 
+    {
+      let url = object.url;
+    template5 = `
+  
+    <div class= "row" style="display: inline-block">
+    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
+  </iframe> </div>
+    </div>
+    </div>
+    `;
+  
+    ligue1.innerHTML += template5;}
+    else if(object.competition.name==="ENGLAND: Premier League" && idPremier<4)
+    
+    {
+      let url = object.url;
+    template6 = `
+  
+    <div class= "row" style="display: inline-block">
+    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
+  </iframe> </div>
+    </div>
+    </div>
+    `;
+  
+    premierleague.innerHTML += template6;}
+
+    else if(object.competition.name==="ROMANIA: Liga 1" && id<100 ) 
+    {
+      let url = object.url;
+    template7 = `
+  
+    <div class= "row" style="display: inline-block">
+    <div class="col s12 serieacss"> <iframe src="${url}" width="500px" height="300px" style="border:1px solid black;">
+  </iframe> </div>
+    </div>
+    </div>
+    `;
+  
+    liga1.innerHTML += template7;}
+  
   });
-  const data = await res.json();
-  const data2 = data.standings[0].table;
-  data2.forEach(team1 => {
-    let name = team1.team.name;
-    let points = team1.points;
-    let position = team1.position;
-    let imgurl = team1.team.crestUrl;
-    let playedGames = team1.playedGames;
-    let goalFor = team1.goalsFor;
-    let goalAgainst= team1.goalsAgainst;
-    let form = team1.form;
-    let template1 = `
-    <tr class="manele2 blue darken-2">
-      <td class="valoare">${position}</td>
-      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td class="center-align forma">${form}</td>
-      <td class="center-align">${playedGames}</td>
-      <td class="center-align">${goalFor}:${goalAgainst}</td>
-      <td class="center-align">${points}</td>
-    </tr>
-    `;
-    let template2 = `
-    <tr class="manele3 red lighten-3">
-      <td class="valoare">${position} <button class="btn-floating btn-small"><i class="material-icons red">arrow_downward</i></button></td>
-      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td class="center-align forma">${form}</td>
-      <td class="center-align">${playedGames}</td>
-      <td class="center-align">${goalFor}:${goalAgainst}</td>
-      <td class="center-align">${points}</td>
-    </tr>
-    
-    `;
-
-    let template3= `
-    <tr class="manele3 orange lighten-2">
-      <td class="valoare">${position}</td>
-      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td class="center-align forma">${form}</td>
-      <td class="center-align">${playedGames}</td>
-      <td class="center-align">${goalFor}:${goalAgainst}</td>
-      <td class="center-align">${points}</td>
-    </tr>
-    
-    `;
-    let template4= `
-    <tr class="manele3">
-      <td class="valoare">${position}</td>
-      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td class="center-align forma">${form}</td>
-      <td class="center-align">${playedGames}</td>
-      <td class="center-align">${goalFor}:${goalAgainst}</td>
-      <td class="center-align">${points}</td>
-    </tr>
-    
-    `;
-    let template5= `
-    <tr class="manele3 brown">
-      <td class="valoare">${position}</td>
-      <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td class="center-align forma">${form}</td>
-      <td class="center-align">${playedGames}</td>
-      <td class="center-align">${goalFor}:${goalAgainst}</td>
-      <td class="center-align">${points}</td>
-    </tr>
-    
-    `;
-    
-    
-    if(position<5) {
-      standings.innerHTML+=template1;
-    }
-
-    if (position >5 && position <7) {
-      standings.innerHTML+=template3;
-    }
-    if(position >15) {
-      standings.innerHTML+=template2;
-    }
-    
-    if(position>6 && position <16) {
-      standings.innerHTML+=template4;
-    }
-
-    if(position===5) {
-      standings.innerHTML+=template5;
-    }
-    
-    
-    
-  });
+  }
   
+  window.addEventListener('load', getValue);
   
-
-  
-  
-  /* manele.innerHTML = data.value; */
-}
-
-window.addEventListener('load',getLeague);

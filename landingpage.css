@@ -4,6 +4,13 @@
   border-radius: 5rem;
 }
 
+.seriacss {
+  display: grid !important;
+  list-style: none !important;
+  display: inline;
+  float: none !important;
+}
+
 @media only screen and (max-width: 600px) {
   table {
     font-size: 0.9rem;
