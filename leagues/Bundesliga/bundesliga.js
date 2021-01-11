@@ -35,18 +35,18 @@ async function getLeague() {
     <tr class="manele2 blue darken-2">
       <td class="valoare">${position} <button class="btn-floating btn-small franzela"></button></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td>${playedGames}</td>
-      <td>${goalFor}:${goalAgainst}</td>
-      <td>${points}</td>
+      <td class="center-align">${playedGames}</td>
+      <td class="center-align">${goalFor}:${goalAgainst}</td>
+      <td class="center-align">${points}</td>
     </tr>
     `;
     let template2 = `
     <tr class="manele3 red lighten-3">
       <td class="valoare">${position} <button class="btn-floating btn-small"><i class="material-icons red">arrow_downward</i></button></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td>${playedGames}</td>
-      <td>${goalFor}:${goalAgainst}</td>
-      <td>${points}</td>
+      <td class="center-align">${playedGames}</td>
+      <td class="center-align">${goalFor}:${goalAgainst}</td>
+      <td class="center-align">${points}</td>
     </tr>
     
     `;
@@ -55,9 +55,9 @@ async function getLeague() {
     <tr class="manele3 orange lighten-2">
       <td class="valoare">${position} <button class="btn-floating btn-small europa"></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td>${playedGames}</td>
-      <td>${goalFor}:${goalAgainst}</td>
-      <td>${points}</td>
+      <td class="center-align">${playedGames}</td>
+      <td class="center-align">${goalFor}:${goalAgainst}</td>
+      <td class="center-align">${points}</td>
     </tr>
     
     `;
@@ -65,9 +65,9 @@ async function getLeague() {
     <tr class="manele3">
       <td class="valoare">${position}</td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td>${playedGames}</td>
-      <td>${goalFor}:${goalAgainst}</td>
-      <td>${points}</td>
+      <td class="center-align">${playedGames}</td>
+      <td class="center-align">${goalFor}:${goalAgainst}</td>
+      <td class="center-align">${points}</td>
     </tr>
     
     `;
@@ -75,9 +75,9 @@ async function getLeague() {
     <tr class="manele3 brown">
       <td class="valoare">${position} <button class="btn-floating btn-small groparu"></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
-      <td>${playedGames}</td>
-      <td>${goalFor}:${goalAgainst}</td>
-      <td>${points}</td>
+      <td class="center-align">${playedGames}</td>
+      <td class="center-align">${goalFor}:${goalAgainst}</td>
+      <td class="center-align">${points}</td>
     </tr>
     
     `;
