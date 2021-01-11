@@ -26,6 +26,34 @@ img {
   border-radius: 15rem;
 }
 
+.buttonhand {
+  margin-top: 1.1rem;
+  border-radius: 1.5rem;
+  margin-right: 5rem;
+}
+
+.buttonhand:hover,
+.faleru:hover,
+.palermo:hover {
+  opacity: 0.9 !important;
+}
+
+.faleru {
+  margin-top: 1.1rem;
+  border-radius: 1.5rem;
+  margin-left: 15rem;
+}
+
+.palermo {
+  margin-top: 1.1rem;
+  border-radius: 1.5rem;
+  margin-left: 19rem;
+}
+
+.bastinas {
+  margin-top: -1rem !important;
+}
+
 @media only screen and (max-width: 600px) {
   table {
     font-size: 0.9rem;
