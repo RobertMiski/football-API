@@ -4,6 +4,13 @@
   border-radius: 5rem;
 }
 
+.seriacss {
+  display: grid !important;
+  list-style: none !important;
+  display: inline;
+  float: none !important;
+}
+
 @media only screen and (max-width: 600px) {
   table {
     font-size: 0.9rem;
@@ -12,12 +19,4 @@
   .frumosu {
     max-width: 50%;
   }
-
-  .header {
-    font-size: 0.5rem !important;
-  }
-}
-
-.serieacss {
-  display: inline-block;
 }

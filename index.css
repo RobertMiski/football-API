@@ -69,6 +69,12 @@ img {
   background-position: center;
 }
 
+.playoff {
+  background-image: url("../resources/playoff.png") !important;
+  background-size: cover !important;
+  background-position: center;
+}
+
 .valoare {
   font-size: 1.2rem !important;
   font-weight: 650;
