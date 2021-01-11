@@ -1,32 +1,87 @@
 html,
 body {
   overflow-x: hidden;
-  font-weight: 600;
+  font-size: 0.96rem;
 }
 body {
   position: relative;
 }
 
-td,
-tr {
-  border-radius: 0px !important;
+tr,
+td {
+  border-radius: 0px;
+  font-weight: 600;
 }
 
 thead {
+  background-color: rgb(255, 255, 255);
+  color: black;
   border-radius: 0px !important;
+  font-weight: bolder !important;
+}
+table {
+  margin-top: 1.5rem;
 }
 
-table {
-  border: solid 0px black !important;
-  margin-top: 1rem !important;
+img {
+  border-radius: 15rem;
+}
+
+.buttonhand {
+  margin-top: 1.1rem;
+  border-radius: 1.5rem;
+  margin-right: 5rem;
+}
+
+.buttonhand:hover,
+.faleru:hover,
+.palermo:hover {
+  opacity: 0.9 !important;
+}
+
+.faleru {
+  border-radius: 1.5rem;
+  margin-left: 15rem;
+}
+
+.palermo {
+  border-radius: 1.5rem;
+  margin-left: 19rem;
+}
+
+.bastinas {
+  margin-top: -1rem !important;
+}
+
+.franzela {
+  background-image: url("https://banner2.cleanpng.com/20181112/fwr/kisspng-vector-graphics-uefa-europa-league-logo-football-p-balls-footie-spot-5be924f50f1974.1135591115420060050619.jpg") !important;
+  background-size: cover;
+}
+
+.groparu {
+  background-image: url("../resources/download.png") !important;
+  background-size: cover;
+}
+
+.europa {
+  background-image: url("../resources/europa\ league.png") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.playoff {
+  background-image: url("../resources/playoff.png") !important;
+  background-size: cover !important;
+  background-position: center;
+}
+
+.valoare {
+  font-size: 1.2rem !important;
+  font-weight: 650;
 }
 
 @media only screen and (max-width: 600px) {
   table {
-    font-size: 0.5rem !important;
+    font-size: 0.9rem;
   }
-}
-
-img {
-  border-radius: 10rem !important;
 }

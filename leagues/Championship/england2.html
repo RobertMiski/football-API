@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../../index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>League Standings</title>
+</head>
+<body>
+  <nav>
+   
+      <div class="nav-wrapper black">
+        <a href="#" class="brand-logo truncate banana"><img src="https://seeklogo.com/images/S/sky-bet-championship-logo-C4F6910987-seeklogo.com.png" height="30px" width="30px"> Championship</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a class='dropdown-trigger btn right white black-text buttonhand hide-on-med-and-down' href='#' data-target='dropdown1'>  <i class="material-icons right large" style="margin-top: -0.9rem;">dehaze</i>Select League</a>
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="../England/PremierLeague.html"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg" height="10px" width="15px"> Premier League</a></li>
+          <li><a href="../Bundesliga/bundesliga.html"><img src="https://www.saamanagement.it/wp-content/uploads/2017/10/1200px-Flag_of_Germany.svg.png" height="10px" width="15px"> Bundesliga</a></li>
+          <li><a href="../France/ligue1.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png" height="10px" width="15px"> Ligue 1</a></li>
+          <li><a href="../Italia/italia.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png" height="10px" width="15px"> Serie A</a></li>
+          <li><a href="../Spain/laliga.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" height="10px" width="15px"> La Liga</a></li>
+        </ul>
+        
+        <a href="../../index.html" class=" waves-effect waves-light white black-text btn hide-on-med-and-down faleru" style="margin-left: 18rem;"><i class="material-icons right bastinas">home</i>Home</a>
+
+      </div>
+    </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../../index.html"><i class="material-icons left" style="margin-right: -0.01rem;">home</i>Home</a></li>
+    <li class="divider" tabindex="-5"></li>
+    <li><a href="../Bundesliga/bundesliga.html"><img src="https://www.saamanagement.it/wp-content/uploads/2017/10/1200px-Flag_of_Germany.svg.png" height="10px" width="15px"> Bundesliga</a></li>
+    <li class="divider" tabindex="-5"></li>
+    <li><a href="../England/PremierLeague.html"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Great_Britain_%281707%E2%80%931800%29.svg" height="10px" width="15px"> Premier League</a></li>
+    <li class="divider" tabindex="-5"></li>
+    <li><a href="../France/ligue1.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/640px-Flag_of_France.svg.png" height="10px" width="15px"> Ligue 1</a></li>
+    <li class="divider" tabindex="-5"></li>
+    <li><a href="../Italia/italia.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png" height="10px" width="15px"> Serie A</a></li>
+    <li class="divider" tabindex="-5"></li>
+    <li><a href="../Spain/laliga.html"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" height="10px" width="15px"> La Liga</a></li>
+    <li class="divider" tabindex="-5"></li>
+</ul>
+
+  
+  <div class="container center" >
+    <div class="manele center">
+      <table class="table center">
+        <thead>
+          <tr class="">
+            <th>Position</th>
+            <th>Name</th>
+            <th class="center-align">Played</th>
+            <th class="center-align">Goal Difference</th>
+            <th class="center-align">Points</th>
+          </tr>
+        </thead>
+        <tbody class="standings">
+        
+        </tbody>
+      </table>
+    
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../Championship/england2.js"></script>
+</body>
+</html>
