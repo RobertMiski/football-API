@@ -1,7 +1,32 @@
 html,
 body {
   overflow-x: hidden;
+  font-weight: 600;
 }
 body {
   position: relative;
+}
+
+td,
+tr {
+  border-radius: 0px !important;
+}
+
+thead {
+  border-radius: 0px !important;
+}
+
+table {
+  border: solid 0px black !important;
+  margin-top: 1rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    font-size: 0.5rem !important;
+  }
+}
+
+img {
+  border-radius: 10rem !important;
 }

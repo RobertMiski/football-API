@@ -79,11 +79,11 @@ async function getLeague() {
     if (position===5) {
       standings.innerHTML+=template3;
     }
-    if(position >18) {
+    if(position >17) {
       standings.innerHTML+=template2;
     }
     
-    if(position>6 && position <16) {
+    if(position>6 && position <18) {
       standings.innerHTML+=template4;
     }
     
