@@ -33,7 +33,7 @@ async function getLeague() {
     
     let template1 = `
     <tr class="manele2 blue darken-2">
-      <td class="valoare">${position}</td>
+      <td class="valoare">${position} <button class="btn-floating btn-small franzela"></button></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
@@ -53,7 +53,7 @@ async function getLeague() {
 
     let template3= `
     <tr class="manele3 orange lighten-2">
-      <td class="valoare">${position}</td>
+      <td class="valoare">${position} <button class="btn-floating btn-small europa"></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
@@ -73,7 +73,7 @@ async function getLeague() {
     `;
     let template5= `
     <tr class="manele3 brown">
-      <td class="valoare">${position}</td>
+      <td class="valoare">${position} <button class="btn-floating btn-small groparu"></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>

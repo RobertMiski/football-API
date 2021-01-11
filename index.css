@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  font-size: 0.96rem;
 }
 body {
   position: relative;
@@ -52,6 +53,33 @@ img {
 
 .bastinas {
   margin-top: -1rem !important;
+}
+
+.franzela {
+  background-image: url("https://banner2.cleanpng.com/20181112/fwr/kisspng-vector-graphics-uefa-europa-league-logo-football-p-balls-footie-spot-5be924f50f1974.1135591115420060050619.jpg") !important;
+  background-size: cover;
+}
+
+.groparu {
+  background-image: url("download.png") !important;
+  background-size: cover;
+}
+
+.europa {
+  background-image: url("europa\ league.png") !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.playoff {
+  background-image: url("playoff.png") !important;
+  background-size: cover !important;
+  background-position: center;
+}
+
+.valoare {
+  font-size: 1.2rem !important;
+  font-weight: 650;
 }
 
 @media only screen and (max-width: 600px) {

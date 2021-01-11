@@ -32,7 +32,7 @@ async function getLeague() {
     
     let template1 = `
     <tr class="manele2 blue darken-2">
-      <td class="valoare">${position}</td>
+      <td class="valoare">${position} <button class="btn-floating btn-small franzela"></button></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst} </td>
@@ -55,7 +55,7 @@ async function getLeague() {
 
     let template3= `
     <tr class="manele3 orange lighten-2">
-      <td class="valoare">${position}</td>
+      <td class="valoare">${position} <button class="btn-floating btn-small europa"></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
@@ -77,7 +77,7 @@ async function getLeague() {
     `;
     let template5= `
     <tr class="manele3 blue">
-      <td class="valoare">${position}</td>
+      <td class="valoare">${position} <button class="btn-floating btn-small franzela"></button></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
@@ -87,8 +87,8 @@ async function getLeague() {
     
     `;
     let template6= `
-    <tr class="manele3 brown">
-      <td class="valoare">${position}</td>
+    <tr class="manele3 brown ">
+      <td class="valoare">${position} <button class="btn-floating btn-small groparu"></button></td>
       <td><img src="${imgurl}" height="20px" width="20px">${name}</td>
       <td>${playedGames}</td>
       <td>${goalFor}:${goalAgainst}</td>
@@ -103,14 +103,14 @@ async function getLeague() {
       standings.innerHTML+=template1;
     }
 
-    if (position >5 && position <7) {
+    if (position >4 && position <6) {
       standings.innerHTML+=template3;
     }
     if(position >17) {
       standings.innerHTML+=template2;
     }
     
-    if(position>6 && position <18) {
+    if(position>5 && position <18) {
       standings.innerHTML+=template4;
     }
     if(position===3) {
