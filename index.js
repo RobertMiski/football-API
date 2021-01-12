@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     template1 = `
   
     
-    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="320px" style="border:1px solid black;">
+    <div class="col s4 serieacss "> <iframe src="${url}" width="300px" height="320px" style="border:1px solid black;">
   </iframe> 
     </div>
     
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
     template2 = `
   
     
-    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="320px" style="border:1px solid black;">
+    <div class="col s4 serieacss "> <iframe src="${url}" width="300px" height="320px" style="border:1px solid black;">
   </iframe> 
     </div>
     
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let url = object.url;
     template5 = `
   
-    <div class="col s4 serieacss"> <iframe src="${url}" width="300px" height="330px" style="border:1px solid black;">
+    <div class="col s4 serieacss "> <iframe src="${url}" width="300px" height="330px" style="border:1px solid black;">
   </iframe> 
     </div>
     
