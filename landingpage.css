@@ -2,7 +2,7 @@ html,
 body {
   font-family: "Montserrat", sans-serif;
   background-image: url("./resources/background.png");
-  background-position: right 4rem;
+  background-position: right 4.2rem;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -15,7 +15,6 @@ body {
 }
 
 .linkmeciuri {
-  margin-top: 2rem;
   font-size: 1.5rem;
   margin-left: 1.5rem;
   text-decoration: none;
@@ -24,6 +23,11 @@ body {
 
 .linkmeciuri {
   opacity: 0.9 !important;
+}
+
+.capatana {
+  margin-left: 20rem !important;
+  font-size: 2.3rem !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -52,11 +56,20 @@ body {
   }
 
   .footer {
-    margin-top: 25rem !important;
+    margin-top: 28rem !important;
+    background-color: white;
+    color: black;
   }
 
   .capatana {
     margin-top: -8rem;
+    font-size: 0.2rem;
+    margin-left: 0px;
+  }
+
+  .malareu {
+    margin-top: -1rem;
+    font-size: 1.2rem !important;
   }
 }
 
