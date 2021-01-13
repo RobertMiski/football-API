@@ -49,6 +49,7 @@ body {
     background-image: none !important;
     background-color: black;
     color: white !important;
+    overflow-y: auto !important;
   }
 
   .intro {
